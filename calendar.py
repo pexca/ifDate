@@ -18,6 +18,8 @@ class Calendar:
             return False
 
     def check_valid(self):
+        if type(self.day) is not int:
+            return False
         if self.year <= 0:
             return False
         if self.month <= 0 or self.month > 12:
